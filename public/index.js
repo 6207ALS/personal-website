@@ -53,19 +53,19 @@ function panStack() {
 
 	gsap.from("#stack-container", {
 		opacity: 0,
-		delay: 2.2,
+		delay: 2.3,
 		duration: 0.3,
 	})
 
 	gsap.to(["#stack-2", "#stack-3"], {
 		yPercent: 12,
-		delay: 2.5,
+		delay: 2.6,
 		duration: 0.5,
 	});
 	
 	gsap.to("#stack-3", {
 		yPercent: 22,
-		delay: 3,
+		delay: 3.1,
 		duration: 0.5,
 	});
 }
@@ -170,7 +170,6 @@ function changeFontRandomly(letter) {
 
 function animateRansomLetters() {
 	const letters = document.querySelectorAll(".letter-container");
-	console.log(letters);
 
 	letters.forEach(letter => changeFontRandomly(letter));
 }
@@ -184,7 +183,8 @@ function debounce(func) {
 	}
 }
 
-function onDOMContentLoaded() {
+async function onDOMContentLoaded() {
+	await document.fonts.ready;
 	staggerHeaderWords();
 	panStack();
 	fadeInProfile();

@@ -55,6 +55,10 @@ html {
 	scroll-behavior: smooth;
 	cursor: url("../cursor-icon-opaque.svg"), auto;
 	/* background: linear-gradient(#F0F0F5, #fffcef); */
+
+	button:hover {
+		cursor: url("../cursor-icon-opaque.svg"), auto;
+	}
 }
 
 body {
@@ -121,8 +125,8 @@ header {
 	}
 
 	p {
-		font-size: 1vw;
-		line-height: 1.5vw;
+		font-size: 1.3vw;
+		line-height: 2vw;
 	}
 
 	a:link { 
@@ -167,7 +171,7 @@ header {
 
 #profile-wrapper {
 	overflow: hidden;
-	max-width: 40%;
+	width: 52vw;
 }
 
 #profile {
@@ -327,6 +331,7 @@ li {
 	padding: 2vw 3vw;
 }
 #secondary-work-description-container {
+	font-size: 1.5vw;
 	grid-column: secondary-description-s/secondary-description-e;
 	border: 0.01vw solid black;
 	padding: 2vw;
