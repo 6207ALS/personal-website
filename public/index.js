@@ -170,7 +170,6 @@ function changeFontRandomly(letter) {
 
 function animateRansomLetters() {
 	const letters = document.querySelectorAll(".letter-container");
-	console.log(letters);
 
 	letters.forEach(letter => changeFontRandomly(letter));
 }
@@ -184,7 +183,8 @@ function debounce(func) {
 	}
 }
 
-function onDOMContentLoaded() {
+async function onDOMContentLoaded() {
+	await document.fonts.ready;
 	staggerHeaderWords();
 	panStack();
 	fadeInProfile();
