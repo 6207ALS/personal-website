@@ -65,6 +65,15 @@ html {
 	button:hover {
 		cursor: url("../cursor-icon-opaque.svg"), auto;
 	}
+
+	::selection {
+		color: var(--off-white);
+		background: var(--campfireBlack);
+	}
+	::-moz-selection {
+		color: var(--off-white);
+		background: var(--campfireBlack);
+	}
 }
 
 body {
@@ -654,6 +663,11 @@ footer {
 			width: 4vw;
 			margin-right: 1vw;
 		}
+	}
+
+	#opportunity-text-wrapper,
+	#contact-text-wrapper {
+		overflow: hidden;
 	}
 }
 
