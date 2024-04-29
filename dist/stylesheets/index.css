@@ -23,6 +23,12 @@
 	src: url("../fonts/neue-montreal/PPNeueMontreal-Italic.otf");
 }
 
+@font-face {
+	font-family: HattonBold;
+	ascent-override: 90%;
+	src: url("../fonts/hatton/PPHatton-Bold.otf");
+}
+
 :root {
 	--blue: #1669E6;
 	--dark-blue: #0000CA;
@@ -564,6 +570,8 @@ li {
 	}
 
 	.colorful-letter {
+		font-family: HattonBold;
+		color: rgb(52, 52, 52);
 		background-color: black;
 		width: 5vw;
 		height: 5vw;
@@ -572,7 +580,6 @@ li {
 		justify-content: center;
 		align-items: center;
 		font-size: 2vw;
-		color: black;
 	}
 
 	.letter-container {
