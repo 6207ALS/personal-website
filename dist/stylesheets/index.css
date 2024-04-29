@@ -55,6 +55,10 @@ html {
 	scroll-behavior: smooth;
 	cursor: url("../cursor-icon-opaque.svg"), auto;
 	/* background: linear-gradient(#F0F0F5, #fffcef); */
+
+	button:hover {
+		cursor: url("../cursor-icon-opaque.svg"), auto;
+	}
 }
 
 body {
