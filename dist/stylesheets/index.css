@@ -660,7 +660,7 @@ footer {
 		align-items: center;
 
 		img {
-			width: 4vw;
+			max-width: 4vw;
 			margin-right: 1vw;
 		}
 	}
