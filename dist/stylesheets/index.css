@@ -635,11 +635,7 @@ footer {
 	justify-content: space-between;
 
 	h1 {
-		font-size: 200%;
-	}
-
-	h3 {
-		margin-top: 2vh;
+		font-size: 3vw;
 	}
 
 	#footer-content {
@@ -663,6 +659,10 @@ footer {
 			max-width: 4vw;
 			margin-right: 1vw;
 		}
+	}
+
+	#opportunity-text {
+		margin-top: 2vh;
 	}
 
 	#opportunity-text-wrapper,
